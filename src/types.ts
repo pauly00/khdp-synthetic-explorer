@@ -1,0 +1,8 @@
+export type Concept = { concept_id:string; concept_name:string }
+export type ImportMeta = { filename:string; imported_rows:number; stored_rows:number; unique_people:number; invalid_rows:number; imported_at:string; validation_note:string; new_rows:number; duplicate_rows:number; conflict_rows:number }
+export type DataTable = { dataset:string; label:string; description:string; used:boolean; meta:ImportMeta | null; state:string; registration_ready:boolean }
+export type DataStatus = { ready:boolean; analysis_ready:boolean; tables:DataTable[]; history:{id:number;dataset:string;action:string;filename:string;rows_count:number;created_at:string;note:string}[]; issues:{ready:boolean;duplicate_people:number|null;unmatched_conditions:number|null;unknown_codes:number|null} }
+export type SyntheticResult = { reference_date:string; min_age:number|null; max_age:number|null; concept:Concept|null; total_people:number; diagnosis_people:number; age_filtered_people:number; age_unavailable_excluded:number; age_excluded:number; has_age_filter:boolean; has_diagnosis:boolean }
+export type DocumentItem = { kind:string; filename:string; uploaded_at:string; summary:string; checks:string; content?:string }
+export type DiagnosisItem = { concept_id:string; concept_name:string; people_count:number; record_count:number; ratio:number }
+export type DiagnosisDetail = { concept_id:string; concept_name:string; reference_date:string; people_count:number; record_count:number; first_date:string|null; last_date:string|null; age_bands:{label:string;count:number}[]; sex:{value:string;count:number}[]; sex_stored:boolean; years:{year:string;people_count:number}[] }
