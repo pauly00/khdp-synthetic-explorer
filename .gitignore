@@ -1,32 +1,23 @@
-@'
+# Dependencies and package caches
 node_modules/
+.npm/
+# Build and tool output
 dist/
 build/
 .vite/
-.npm/
-__pycache__/
-*.pyc
+# Python environments and generated files
 .venv/
 venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.class
+# Local application data and database files
 data/
-archive/
-.java-db-probe/
-java-probe/
-.migration-check/
-migration/
-h2_bridge.py
-H2Bridge.java
 *.db
-*.db-*
 *.sqlite
 *.sqlite3
-*.mv.db
+# Logs
 *.log
-*.jar
-*.war
-*.class
-*.tar.gz
-.env
-.env.*
-!.env.example
-'@ | Set-Content -Path .gitignore -Encoding utf8
+# Retired migration experiments and downloaded tools
+archive/retired-migration/

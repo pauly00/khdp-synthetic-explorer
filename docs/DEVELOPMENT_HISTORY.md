@@ -34,6 +34,6 @@
 ### 8. Spring 및 H2 이전 시험 후 취소
 - **목적:** 기존 FastAPI·SQLite를 다른 서버 및 파일 DB로 옮길 수 있는지 별도 공간에서 시험했습니다.
 - **주요 요청:** Java 실행, WAR, H2 지속성 및 이전 가능성을 확인하되 기존 서비스와 데이터를 보존했습니다.
-- **반영 결과와 검증 범위:** 이전이 완결되지 않아 취소했으며, 현재 실행 경로는 React·Vite·FastAPI·SQLite 구성입니다. 시험 자료는 `archive/retired-migration/`에 분리되어 있고 서비스가 사용하지 않습니다. 세부 시험 결과와 기록 간 불일치는 [Java·Spring·H2 이전 시험 기록](MIGRATION_TROUBLESHOOTING.md)을 참고하세요.
+- **반영 결과와 검증 범위:** 이전이 완결되지 않아 취소했으며, 현재 실행 경로는 React·Vite·FastAPI·SQLite 구성입니다. 세부 시험 결과와 기록 간 불일치는 [Java·Spring·H2 이전 시험 기록](MIGRATION_TROUBLESHOOTING.md)을 참고하세요.
 ## 현재 상태와 범위
 현재 API와 화면은 FastAPI 및 SQLite를 사용합니다. 미지원 자료의 전용 분석 화면, 외부 공공데이터 API 연동, 실제 환자 모집·의료 판단 기능은 구현 완료로 보지 않습니다.
