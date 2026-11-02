@@ -16,7 +16,6 @@ src/                   # 화면과 사용자 조작 처리
 backend/               # API와 데이터 처리
 docs/                  # 실행 안내와 개발 기록
 data/                  # 실행 중 생성·사용되는 SQLite와 CSV 저장소
-archive/               # 현재 실행 경로에서 분리한 이전 시험 보관 자료
 ```
 ## 상세 문서
 - [개발 이력](docs/DEVELOPMENT_HISTORY.md)
