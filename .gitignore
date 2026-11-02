@@ -21,3 +21,18 @@ data/
 *.log
 # Retired migration experiments and downloaded tools
 archive/retired-migration/
+archive/
+.java-db-probe/
+java-probe/
+.migration-check/
+migration/
+h2_bridge.py
+H2Bridge.java
+*.db-*
+*.mv.db
+*.jar
+*.war
+*.tar.gz
+.env
+.env.*
+!.env.example
